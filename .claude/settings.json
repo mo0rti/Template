@@ -53,7 +53,15 @@
       "Bash(git -C \"c:/Workspace/Projects/Template\" check-ignore -v \"template/android/gradle.properties\")",
       "Bash(git -C \"c:/Workspace/Projects/Template\" add \"template/android/gradle.properties\")",
       "Bash(git -C \"c:/Workspace/Projects/Template\" add \"template/android/gradlew\" \"template/android/gradlew.bat\" \"template/android/gradle/wrapper/gradle-wrapper.jar\")",
-      "Bash(./gradlew testDebugUnitTest --no-daemon)"
+      "Bash(./gradlew testDebugUnitTest --no-daemon)",
+      "Read(//c/Workspace/Projects/Ingredish/Repos/ingredish-backend/src/**)",
+      "Read(//c/Workspace/Projects/Ingredish/Repos/ingredish-backend/**)",
+      "Bash(rm -rf \"template/backend/src/main/kotlin/{{package_path}}/auth\")",
+      "Bash(rm -rf \"template/backend/src/main/kotlin/{{package_path}}/config\")",
+      "Bash(rm -rf \"template/backend/src/main/kotlin/{{package_path}}/common\")",
+      "Bash(rm -rf \"template/backend/src/main/kotlin/{{package_path}}/features\")",
+      "Bash(rm -rf \"template/backend/src/test/kotlin/{{package_path}}/auth\")",
+      "Bash(rm -rf \"template/backend/src/test/kotlin/{{package_path}}/features\")"
     ],
     "additionalDirectories": [
       "c:\\Workspace\\Projects\\Template\\template\\android\\app\\src\\main\\kotlin\\{{package_path}}\\core\\session",
