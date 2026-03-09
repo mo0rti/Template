@@ -23,7 +23,37 @@
       "Bash(pipx list)",
       "Bash(pip install copier)",
       "Bash(pip install jinja2-time)",
-      "Read(//tmp/template-test-output/**)"
+      "Read(//tmp/template-test-output/**)",
+      "Bash(rm -rf /tmp/template-test)",
+      "Bash(copier copy --trust --defaults --data 'project_name=Demo App' --data 'package_identifier=com.test.demoapp' . /tmp/template-test)",
+      "Bash(./gradlew assembleDebug)",
+      "Bash(gradle wrapper)",
+      "Bash(where gradle.bat)",
+      "Read(//c/Workspace/Projects/Template/$GRADLE_HOME/bin/**)",
+      "Read(//c//**)",
+      "Read(//c/Workspace/Projects/Template/gradle/**)",
+      "Read(//c/Program Files/Android/Android Studio/**)",
+      "Bash(where gradle)",
+      "Read(//c/Workspace/Projects/Ingredish/Repos/ingredish-android/**)",
+      "Bash(copier copy --trust --defaults --data 'project_name=Demo App' --data 'package_identifier=com.test.demoapp' \"c:/Workspace/Projects/Template\" /tmp/template-test)",
+      "Bash(chmod +x gradlew)",
+      "Bash(java -version)",
+      "Read(//c/Workspace/Projects/Template/$USERPROFILE/**)",
+      "Read(//c/Users/Gamer/.jdks//**)",
+      "Bash(export JAVA_HOME=\"/c/Program Files/Java/corretto-21.0.10\")",
+      "Bash(./gradlew assembleDebug --no-daemon)",
+      "Read(//c/Program Files/Java/**)",
+      "Bash(ls -d \"/c/Program Files/Java/\"*21*)",
+      "Bash(ls -d \"C:/Program Files/Java/\"*21*)",
+      "Bash(cmd.exe /c \"dir \"\"C:\\\\Program Files\\\\Java\"\"\")",
+      "Read(//c/Users/Gamer/**)",
+      "Read(//c/Users/Gamer/.jdks/**)",
+      "Bash(export JAVA_HOME=\"/c/Users/Gamer/.jdks/corretto-21.0.10\")",
+      "Bash(\"$JAVA_HOME/bin/java\" -version)",
+      "Bash(git -C \"c:/Workspace/Projects/Template\" check-ignore -v \"template/android/gradle.properties\")",
+      "Bash(git -C \"c:/Workspace/Projects/Template\" add \"template/android/gradle.properties\")",
+      "Bash(git -C \"c:/Workspace/Projects/Template\" add \"template/android/gradlew\" \"template/android/gradlew.bat\" \"template/android/gradle/wrapper/gradle-wrapper.jar\")",
+      "Bash(./gradlew testDebugUnitTest --no-daemon)"
     ],
     "additionalDirectories": [
       "c:\\Workspace\\Projects\\Template\\template\\android\\app\\src\\main\\kotlin\\{{package_path}}\\core\\session",
@@ -33,7 +63,8 @@
       "c:\\Workspace\\Projects\\Template\\template\\android\\app\\src\\main\\kotlin\\{{package_path}}\\core\\common",
       "c:\\Workspace\\Projects\\Template\\template\\android\\app\\src\\main\\kotlin\\{{package_path}}\\feature\\auth\\data\\repository",
       "c:\\Workspace\\Projects\\Template\\template\\android\\app\\src\\main\\kotlin\\{{package_path}}\\feature\\example\\data\\repository",
-      "\\tmp"
+      "\\tmp",
+      "C:\\Workspace\\Projects\\Ingredish\\Repos\\ingredish-android"
     ]
   }
 }
